@@ -4,7 +4,7 @@ from typing import Tuple
 
 
 
-class IPolicy(ABC):
+class Policy(ABC):
     
     @abstractmethod
     def get_epsilon_greedy_action(self, state) -> Tuple[int, callable]:
